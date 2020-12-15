@@ -27,7 +27,7 @@ generateButton.addEventListener("click", function() {
     // Condizione per capire quale percentuale di sconto applicare
     if (age == 'under18') {
         finalPrice = discount1;
-        offerName = 'Sconto minorenni';
+        offerName = 'Sconto Junior';
     } else if (age == 'over65') {
         finalPrice = discount2;
         offerName = 'Sconto Senior';
@@ -48,6 +48,9 @@ generateButton.addEventListener("click", function() {
     document.getElementById('carriage').innerHTML = carriageNumber;
     document.getElementById('discount_code').innerHTML = discountCode;
     document.getElementById('final_price').innerHTML = finalPrice.toFixed(2) + ' €';
+
+    // Funzione per mostrare i dettagli del biglietto al click del pulsante
+    document.getElementById('detail_box').className = 'show';
 });
 
 // | FUNZIONE CHE CANCELLA I DATI AL CLICK DEL RELATIVO PULSANTE
@@ -64,6 +67,9 @@ eraseButton.addEventListener("click", function() {
     document.getElementById('carriage').innerHTML = '';
     document.getElementById('discount_code').innerHTML = '';
     document.getElementById('final_price').innerHTML = '';
+
+    // Funzione per nascondere i dettagli del biglietto al click del pulsante
+    document.getElementById('detail_box').className = 'hidden';
 });
 
 

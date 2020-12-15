@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>Document</title>
+    <title>Acquista il biglietto per il tuo prossimo viaggio</title>
     <!-- Favicon -->
-
+    <link rel="shortcut icon" href="https://www.italotreno.it/Content/favicon/android-chrome-192x192.png" type="png">
     <!-- Link FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <!-- Link Google Font -->
@@ -64,14 +64,17 @@
         <!-- Dettagli biglietto generato -->
         <section class="ticket_detail">
             <h2>Il tuo biglietto</h2>
-            <div id="detail_box">
+            <div id="detail_box" class="hidden">
                 <h3>Dettaglio passeggeri</h3>
 
+                <!-- Nominativo cliente -->
                 <div class="detail_container">
                     <div class="detail_name">
                         <h4>Nome e Cognome passeggero</h4>
                         <p id="passenger_name"></p>
                     </div>
+
+                    <!-- Tabella Informazioni biglietto -->
                     <div class="detail_info">
                         <table>
                             <tr>
@@ -89,6 +92,7 @@
                         </table>
                     </div>
                 </div>
+                <a class="btn buy">Acquista</a>
             </div>
         </section>
     </main>
