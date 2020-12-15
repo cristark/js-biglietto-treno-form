@@ -1,7 +1,7 @@
 // VARIABILI
 var name, km, age, rate, basePrice, discount1, discount2, finalPrice, offerName;
 
-//FUNZIONE CHE GENERA I DATI AL CLICK DEL PULSANTE
+// | FUNZIONE CHE GENERA I DATI AL CLICK DEL PULSANTE
 var generateButton = document.getElementById("generate");
 
 generateButton.addEventListener("click", function() {
@@ -41,7 +41,7 @@ generateButton.addEventListener("click", function() {
     var max = 100000;
     var discountCode = Math.floor(Math.random() * (max - min) ) + min;
 
-    // STAMPA DATI SU TIKET DETAIL
+    // STAMPA DATI SU TICKET DETAIL
     document.getElementById('passenger_name').innerHTML = name;
 
     document.getElementById('discount_name').innerHTML = offerName;
@@ -50,7 +50,7 @@ generateButton.addEventListener("click", function() {
     document.getElementById('final_price').innerHTML = finalPrice.toFixed(2) + ' €';
 });
 
-//FUNZIONE CHE CANCELLA I DATI AL CLICK DEL RELATIVO PULSANTE
+// | FUNZIONE CHE CANCELLA I DATI AL CLICK DEL RELATIVO PULSANTE
 var eraseButton = document.getElementById("erase");
 
 eraseButton.addEventListener("click", function() {
