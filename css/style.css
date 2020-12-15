@@ -7,8 +7,34 @@
 
 body {
   font-family: sans-serif;
+  background-color: #b91450;
+  text-align: center;
+}
+
+h1,
+h2 {
+  color: white;
+  text-transform: uppercase;
 }
 
 a {
   color: black;
+}
+
+/* | GENERATORE BIGLIETTO */
+.info_box {
+  max-width: 1200px;
+  margin: auto;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.info_box .info_row {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.info_box .info_row .info_col {
+  display: flex;
+  flex-direction: column;
 }
