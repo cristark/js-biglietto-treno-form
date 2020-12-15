@@ -32,7 +32,7 @@
 
                     <!-- Sezione NOME + COGNOME -->
                     <div class="info_col">
-                        <label for="">Nome e Cognome</label>
+                        <label for="name">Nome e Cognome</label>
                         <input type="text" name="" id="name" placeholder="Scrivi qui">
                     </div>
 
@@ -45,26 +45,51 @@
                     <!-- Sezione fascia d'età -->
                     <div class="info_col">
                         <label for="">Fascia d'età</label>
-                        <select name="" id="">
-                            <option value="">Seleziona</option>
-                            <option value="">Minorenne</option>
-                            <option value="">Maggiorenne</option>
-                            <option value="">Over 65</option>
+                        <select name="" id="age">
+                            <option value="under18">Minorenne</option>
+                            <option value="over18">Maggiorenne</option>
+                            <option value="over65">Over 65</option>
                         </select>
                     </div>
                 </div>
 
                 <!-- Pulsanti di input -->
                 <div class="info_row">
-                    <a href="" class="btn">Genera</a>
-                    <a href="" class="btn">Annulla</a>
+                    <a id="generate" class="btn">Genera</a>
+                    <a id="erase" class="btn">Annulla</a>
                 </div>
             </div>
         </section>
 
         <!-- Dettagli biglietto generato -->
-        <section id="ticket_detail">
+        <section class="ticket_detail">
             <h2>Il tuo biglietto</h2>
+            <div id="detail_box">
+                <h3>Dettaglio passeggeri</h3>
+
+                <div class="detail_container">
+                    <div class="detail_name">
+                        <h4>Nome e COgnome passeggero</h4>
+                        <p id="passenger_name"></p>
+                    </div>
+                    <div class="detail_info">
+                        <table>
+                            <tr>
+                                <th>Offerta</th>
+                                <th>Carrozza</th>
+                                <th>Codice CP</th>
+                                <th>Costo biglietto</th>
+                            </tr>
+                            <tr>
+                                <td id="discount_name"></td>
+                                <td id="carriage"></td>
+                                <td id="discount_code"></td>
+                                <td id="final_price"></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 

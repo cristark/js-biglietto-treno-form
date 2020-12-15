@@ -17,6 +17,10 @@ h2 {
   text-transform: uppercase;
 }
 
+h3 {
+  text-align: left;
+}
+
 a {
   color: black;
 }
@@ -24,6 +28,7 @@ a {
 /* | GENERATORE BIGLIETTO */
 .info_box {
   max-width: 1200px;
+  height: 300px; /* !DA CANCELLARE */
   margin: auto;
   background-color: #fff;
   border-radius: 5px;
@@ -37,4 +42,21 @@ a {
 .info_box .info_row .info_col {
   display: flex;
   flex-direction: column;
+}
+
+/* | DETTAGLI BIGLIETTO */
+#detail_box {
+  max-width: 1200px;
+  height: 300px; /* !DA CANCELLARE */
+  margin: auto;
+  background-color: #fff;
+}
+
+.detail_container {
+  display: flex;
+  justify-content: center;
+}
+
+.detail_container .detail_name {
+  background-color: grey;
 }
